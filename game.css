@@ -1,0 +1,83 @@
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#heading {
+    color: white;
+    background-color: rgb(52, 79, 177);
+    height: 5rem;
+    line-height: 5rem;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove the old img size */
+img {
+    display: block;
+}
+
+/* Circle containers */
+.stoneclass,
+.paperclass,
+.scissorsclass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden; /* important to clip images to circle */
+}
+
+/* Images fill the circle */
+.choices img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Layout */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+/* Scoreboard */
+.score-board {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+/* Hover effect */
+.stoneclass:hover img,
+.paperclass:hover img,
+.scissorsclass:hover img {
+    opacity: 0.5;
+    cursor: pointer;
+    border-style: solid;
+}
+
+/* Status box */
+.status {
+    display: inline-block;
+    background-color: rgb(49, 31, 164);
+    color: white;
+    font-size: 2rem;
+    margin-top: 50px;
+    padding: 1rem;
+    border-radius: 25px;
+}
